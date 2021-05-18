@@ -23,3 +23,9 @@ jobs:
         distribution: 'adopt'
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+
+    - name: Archive code coverage results
+      uses: actions/upload-artifact@v2
+      with:
+        name: spring-petclinic-2.4.5.jar
+        path: /home/runner/work/githubactions/githubactions/target/spring-petclinic-2.4.5.jar
