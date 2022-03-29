@@ -22,7 +22,7 @@ jobs:
         java-version: '11'
         distribution: 'adopt'
     - name: Build with Maven
-      run: mvn -B package --file pom.xml sonar:sonar -Dsonar.projectKey=codingcasters -Dsonar.host.url=http://168.62.41.128:9000 -Dsonar.login=${{ secrets.SONARTOKEN }}
+      run: mvn -B package --file pom.xml sonar:sonar -Dsonar.projectKey=coding-casters_githubactions -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${{ secrets.SONARTOKEN }}
 
     - name: Target
       uses: actions/upload-artifact@v2
