@@ -25,7 +25,7 @@ jobs:
       run: echo "helllo world"
     - name: Build with Maven
       env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: mvn -B package --file pom.xml sonar:sonar -Dsonar.projectKey=coding-casters_githubactions -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${{ secrets.SONARTOKEN }}
 
     - name: Target
