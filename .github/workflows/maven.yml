@@ -52,4 +52,4 @@ jobs:
         path: /home/runner/work/githubactions/githubactions/target
 
     - name: simple bash script
-      run: pwd&&ls -ltr&&java -version&&sensible-browser
+      run: pwd&&ls -ltr&&java -version
