@@ -95,7 +95,7 @@
       <artifactId>ehcache</artifactId>
     </dependency>
 
-    <!-- webjars -->
+    <!-- webjars jfgfg-->
     <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>webjars-locator-core</artifactId>
